@@ -26,11 +26,6 @@ namespace SynacorChallenge
         return memory[pc++];
     }
 
-    auto Memory::skip() -> void
-    {
-        pc++;
-    }
-
     auto Memory::jump(uint16_t dest) -> void
     {
         pc = dest;

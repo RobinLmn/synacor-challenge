@@ -12,7 +12,6 @@ namespace SynacorChallenge
         auto jump(uint16_t dest) -> void;
         auto write(uint16_t index, uint16_t data) -> void;
         auto read(uint16_t index) const -> uint16_t;
-        auto skip() -> void;
         auto currentAddress() const -> uint16_t;
 
         ~Memory();

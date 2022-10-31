@@ -68,27 +68,17 @@ namespace SynacorChallenge
             case 7:
             {
                 uint16_t a = getNextArgument();
-                if (a == 0)
-                {
-                    memory.skip();
-                    return true;
-                }
-
                 uint16_t b = getNextArgument();
-                memory.jump(b);
+
+                if (a != 0) memory.jump(b);
                 return true;
             }
             case 8:
             {
                 uint16_t a = getNextArgument();
-                if (a != 0)
-                {
-                    memory.skip();
-                    return true;
-                }
-
                 uint16_t b = getNextArgument();
-                memory.jump(b);
+
+                if (a == 0) memory.jump(b);
                 return true;
             }
             case 9:
@@ -193,6 +183,7 @@ namespace SynacorChallenge
 
                 char c = in[0];
                 in.erase(0, 1);
+
                 uint16_t a = getNextRegister();
                 registers[a].set(c);
                 return true;

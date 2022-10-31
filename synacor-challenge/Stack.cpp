@@ -9,7 +9,7 @@ namespace SynacorChallenge
 
     auto Stack::pop() -> uint16_t
     {
-        int data = stack.back();
+        uint16_t data = stack.back();
         stack.pop_back();
         return data;
     }
