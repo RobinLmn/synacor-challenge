@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/robinleman/GitHub/synacor-challenge/synacor-challenge/Controller.cpp">
+			<Option target="synacor_challenge"/>
+		</Unit>
+		<Unit filename="/Users/robinleman/GitHub/synacor-challenge/synacor-challenge/Controller.h">
+			<Option target="synacor_challenge"/>
+		</Unit>
 		<Unit filename="/Users/robinleman/GitHub/synacor-challenge/synacor-challenge/Memory.cpp">
 			<Option target="synacor_challenge"/>
 		</Unit>

@@ -3,8 +3,8 @@
 #include "Memory.h"
 #include "Stack.h"
 #include "Register.h"
+#include "Controller.h"
 #include <array>
-#include <string>
 
 namespace SynacorChallenge
 {
@@ -22,6 +22,6 @@ namespace SynacorChallenge
         std::array<Register, 8> registers;
         Stack stack;
         Memory memory;
-        std::string in;
+        Controller controller;
     };
 }

@@ -1,5 +1,4 @@
 #include "VirtualMachine.h"
-#include <iostream>
 
 namespace SynacorChallenge
 {
@@ -170,22 +169,13 @@ namespace SynacorChallenge
             case 19:
             {
                 uint16_t a = getNextArgument();
-                std::cout << static_cast<char>(a);
+                controller.output(static_cast<char>(a));
                 return true;
             }
             case 20:
             {
-                if (in.empty())
-                {
-                    std::getline(std::cin, in);
-                    in += "\n";
-                }
-
-                char c = in[0];
-                in.erase(0, 1);
-
                 uint16_t a = getNextRegister();
-                registers[a].set(c);
+                registers[a].set(controller.input());
                 return true;
             }
             case 21:

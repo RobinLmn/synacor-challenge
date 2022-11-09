@@ -1,6 +1,5 @@
 #include "Memory.h"
 
-#include <iostream>
 #include <fstream>
 
 namespace SynacorChallenge
